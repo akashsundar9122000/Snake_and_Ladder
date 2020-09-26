@@ -2,6 +2,7 @@ package com.snakeandladder;
 
 import android.content.Context;
 import android.content.SharedPreferences;
+import android.graphics.drawable.AnimationDrawable;
 import android.graphics.drawable.Drawable;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -145,11 +146,15 @@ public class DualPlayerAdapter extends RecyclerView.Adapter<RecyclerView.ViewHol
                 viewHolder.one_o.setVisibility(View.GONE);
             }
         }else if(array[numToDisplay-1][3]==1){
-            viewHolder.one.setBackgroundColor(contextActivity.getResources().getColor(R.color.colorBlue));
+            viewHolder.one.setBackgroundResource(R.drawable.ladder_ani);
+            AnimationDrawable frameAnimation = (AnimationDrawable) viewHolder.one.getBackground();
+            frameAnimation.start();
             viewHolder.one_o.setVisibility(View.GONE);
             viewHolder.one_t.setVisibility(View.GONE);
-        }else if(array[numToDisplay-1][4]==1){
-            viewHolder.one.setBackgroundColor(contextActivity.getResources().getColor(R.color.colorRed));
+        }else if(array[numToDisplay-1][5]==1){
+            viewHolder.one.setBackgroundResource(R.drawable.snake_ani);
+            AnimationDrawable frameAnimation = (AnimationDrawable) viewHolder.one.getBackground();
+            frameAnimation.start();
             viewHolder.one_o.setVisibility(View.GONE);
             viewHolder.one_t.setVisibility(View.GONE);
         } else {
@@ -188,11 +193,15 @@ public class DualPlayerAdapter extends RecyclerView.Adapter<RecyclerView.ViewHol
                 viewHolder.two_t.setVisibility(View.GONE);
             }
         }else if(array[numToDisplay-1][3]==1){
-            viewHolder.two.setBackgroundColor(contextActivity.getResources().getColor(R.color.colorBlue));
+            viewHolder.two.setBackgroundResource(R.drawable.ladder_ani);
+            AnimationDrawable frameAnimation = (AnimationDrawable) viewHolder.two.getBackground();
+            frameAnimation.start();
             viewHolder.two_o.setVisibility(View.GONE);
             viewHolder.two_t.setVisibility(View.GONE);
-        }else if(array[numToDisplay-1][4]==1){
-            viewHolder.two.setBackgroundColor(contextActivity.getResources().getColor(R.color.colorRed));
+        }else if(array[numToDisplay-1][5]==1){
+            viewHolder.two.setBackgroundResource(R.drawable.snake_ani);
+            AnimationDrawable frameAnimation = (AnimationDrawable) viewHolder.two.getBackground();
+            frameAnimation.start();
             viewHolder.two_o.setVisibility(View.GONE);
             viewHolder.two_t.setVisibility(View.GONE);
         }else {
@@ -223,11 +232,15 @@ public class DualPlayerAdapter extends RecyclerView.Adapter<RecyclerView.ViewHol
                 viewHolder.three_o.setVisibility(View.GONE);
             }
         }else if(array[numToDisplay-1][3]==1){
-            viewHolder.three.setBackgroundColor(contextActivity.getResources().getColor(R.color.colorBlue));
+            viewHolder.three.setBackgroundResource(R.drawable.ladder_ani);
+            AnimationDrawable frameAnimation = (AnimationDrawable) viewHolder.three.getBackground();
+            frameAnimation.start();
             viewHolder.three_o.setVisibility(View.GONE);
             viewHolder.three_t.setVisibility(View.GONE);
         }else if(array[numToDisplay-1][5]==1){
-            viewHolder.three.setBackgroundColor(contextActivity.getResources().getColor(R.color.colorRed));
+            viewHolder.three.setBackgroundResource(R.drawable.snake_ani);
+            AnimationDrawable frameAnimation = (AnimationDrawable) viewHolder.three.getBackground();
+            frameAnimation.start();
             viewHolder.three_o.setVisibility(View.GONE);
             viewHolder.three_t.setVisibility(View.GONE);
         }else {
@@ -258,11 +271,15 @@ public class DualPlayerAdapter extends RecyclerView.Adapter<RecyclerView.ViewHol
                 viewHolder.four_o.setVisibility(View.GONE);
             }
         }else if(array[numToDisplay-1][3]==1){
-            viewHolder.four.setBackgroundColor(contextActivity.getResources().getColor(R.color.colorBlue));
+            viewHolder.four.setBackgroundResource(R.drawable.ladder_ani);
+            AnimationDrawable frameAnimation = (AnimationDrawable) viewHolder.four.getBackground();
+            frameAnimation.start();
             viewHolder.four_o.setVisibility(View.GONE);
             viewHolder.four_t.setVisibility(View.GONE);
         }else if(array[numToDisplay-1][5]==1){
-            viewHolder.four.setBackgroundColor(contextActivity.getResources().getColor(R.color.colorRed));
+            viewHolder.four.setBackgroundResource(R.drawable.snake_ani);
+            AnimationDrawable frameAnimation = (AnimationDrawable) viewHolder.four.getBackground();
+            frameAnimation.start();
             viewHolder.four_o.setVisibility(View.GONE);
             viewHolder.four_t.setVisibility(View.GONE);
         }else {
@@ -293,11 +310,15 @@ public class DualPlayerAdapter extends RecyclerView.Adapter<RecyclerView.ViewHol
                 viewHolder.five_o.setVisibility(View.GONE);
             }
         }else if(array[numToDisplay-1][3]==1){
-            viewHolder.five.setBackgroundColor(contextActivity.getResources().getColor(R.color.colorBlue));
+            viewHolder.five.setBackgroundResource(R.drawable.ladder_ani);
+            AnimationDrawable frameAnimation = (AnimationDrawable) viewHolder.five.getBackground();
+            frameAnimation.start();
             viewHolder.five_o.setVisibility(View.GONE);
             viewHolder.five_t.setVisibility(View.GONE);
         }else if(array[numToDisplay-1][5]==1){
-            viewHolder.five.setBackgroundColor(contextActivity.getResources().getColor(R.color.colorRed));
+            viewHolder.five.setBackgroundResource(R.drawable.snake_ani);
+            AnimationDrawable frameAnimation = (AnimationDrawable) viewHolder.five.getBackground();
+            frameAnimation.start();
             viewHolder.five_o.setVisibility(View.GONE);
             viewHolder.five_t.setVisibility(View.GONE);
         }else {
@@ -328,11 +349,15 @@ public class DualPlayerAdapter extends RecyclerView.Adapter<RecyclerView.ViewHol
                 viewHolder.six_o.setVisibility(View.GONE);
             }
         }else if(array[numToDisplay-1][3]==1){
-            viewHolder.six.setBackgroundColor(contextActivity.getResources().getColor(R.color.colorBlue));
+            viewHolder.six.setBackgroundResource(R.drawable.ladder_ani);
+            AnimationDrawable frameAnimation = (AnimationDrawable) viewHolder.six.getBackground();
+            frameAnimation.start();
             viewHolder.six_o.setVisibility(View.GONE);
             viewHolder.six_t.setVisibility(View.GONE);
         }else if(array[numToDisplay-1][5]==1){
-            viewHolder.six.setBackgroundColor(contextActivity.getResources().getColor(R.color.colorRed));
+            viewHolder.six.setBackgroundResource(R.drawable.snake_ani);
+            AnimationDrawable frameAnimation = (AnimationDrawable) viewHolder.six.getBackground();
+            frameAnimation.start();
             viewHolder.six_o.setVisibility(View.GONE);
             viewHolder.six_t.setVisibility(View.GONE);
         }else {
@@ -363,11 +388,15 @@ public class DualPlayerAdapter extends RecyclerView.Adapter<RecyclerView.ViewHol
                 viewHolder.seven_o.setVisibility(View.GONE);
             }
         }else if(array[numToDisplay-1][3]==1){
-            viewHolder.seven.setBackgroundColor(contextActivity.getResources().getColor(R.color.colorBlue));
+            viewHolder.seven.setBackgroundResource(R.drawable.ladder_ani);
+            AnimationDrawable frameAnimation = (AnimationDrawable) viewHolder.seven.getBackground();
+            frameAnimation.start();
             viewHolder.seven_o.setVisibility(View.GONE);
             viewHolder.seven_t.setVisibility(View.GONE);
         }else if(array[numToDisplay-1][5]==1){
-            viewHolder.seven.setBackgroundColor(contextActivity.getResources().getColor(R.color.colorRed));
+            viewHolder.seven.setBackgroundResource(R.drawable.snake_ani);
+            AnimationDrawable frameAnimation = (AnimationDrawable) viewHolder.seven.getBackground();
+            frameAnimation.start();
             viewHolder.seven_o.setVisibility(View.GONE);
             viewHolder.seven_t.setVisibility(View.GONE);
         }else {
@@ -398,11 +427,15 @@ public class DualPlayerAdapter extends RecyclerView.Adapter<RecyclerView.ViewHol
                 viewHolder.eight_o.setVisibility(View.GONE);
             }
         }else if(array[numToDisplay-1][3]==1){
-            viewHolder.eight.setBackgroundColor(contextActivity.getResources().getColor(R.color.colorBlue));
+            viewHolder.eight.setBackgroundResource(R.drawable.ladder_ani);
+            AnimationDrawable frameAnimation = (AnimationDrawable) viewHolder.eight.getBackground();
+            frameAnimation.start();
             viewHolder.eight_o.setVisibility(View.GONE);
             viewHolder.eight_t.setVisibility(View.GONE);
         }else if(array[numToDisplay-1][5]==1){
-            viewHolder.eight.setBackgroundColor(contextActivity.getResources().getColor(R.color.colorRed));
+            viewHolder.eight.setBackgroundResource(R.drawable.snake_ani);
+            AnimationDrawable frameAnimation = (AnimationDrawable) viewHolder.eight.getBackground();
+            frameAnimation.start();
             viewHolder.eight_o.setVisibility(View.GONE);
             viewHolder.eight_t.setVisibility(View.GONE);
         }else {
@@ -432,11 +465,15 @@ public class DualPlayerAdapter extends RecyclerView.Adapter<RecyclerView.ViewHol
                 viewHolder.nine_o.setVisibility(View.GONE);
             }
         }else if(array[numToDisplay-1][3]==1){
-            viewHolder.nine.setBackgroundColor(contextActivity.getResources().getColor(R.color.colorBlue));
+            viewHolder.nine.setBackgroundResource(R.drawable.ladder_ani);
+            AnimationDrawable frameAnimation = (AnimationDrawable) viewHolder.nine.getBackground();
+            frameAnimation.start();
             viewHolder.nine_o.setVisibility(View.GONE);
             viewHolder.nine_t.setVisibility(View.GONE);
         }else if(array[numToDisplay-1][5]==1){
-            viewHolder.nine.setBackgroundColor(contextActivity.getResources().getColor(R.color.colorRed));
+            viewHolder.nine.setBackgroundResource(R.drawable.snake_ani);
+            AnimationDrawable frameAnimation = (AnimationDrawable) viewHolder.nine.getBackground();
+            frameAnimation.start();
             viewHolder.nine_o.setVisibility(View.GONE);
             viewHolder.nine_t.setVisibility(View.GONE);
         }else {
@@ -466,11 +503,15 @@ public class DualPlayerAdapter extends RecyclerView.Adapter<RecyclerView.ViewHol
                 viewHolder.ten_o.setVisibility(View.GONE);
             }
         }else if(array[numToDisplay-1][3]==1){
-            viewHolder.ten.setBackgroundColor(contextActivity.getResources().getColor(R.color.colorBlue));
+            viewHolder.ten.setBackgroundResource(R.drawable.ladder_ani);
+            AnimationDrawable frameAnimation = (AnimationDrawable) viewHolder.ten.getBackground();
+            frameAnimation.start();
             viewHolder.ten_o.setVisibility(View.GONE);
             viewHolder.ten_t.setVisibility(View.GONE);
         }else if(array[numToDisplay-1][5]==1){
-            viewHolder.ten.setBackgroundColor(contextActivity.getResources().getColor(R.color.colorRed));
+            viewHolder.ten.setBackgroundResource(R.drawable.snake_ani);
+            AnimationDrawable frameAnimation = (AnimationDrawable) viewHolder.ten.getBackground();
+            frameAnimation.start();
             viewHolder.ten_o.setVisibility(View.GONE);
             viewHolder.ten_t.setVisibility(View.GONE);
         }else {
